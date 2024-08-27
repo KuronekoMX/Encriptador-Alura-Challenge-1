@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Encriptador Alura</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <main class="contenedor">
+    <!-- Caja para ingresar texto -->
+    <section>
+      <header class="header">
+        <img
+          alt="Logo de Encriptador Alura"
+          class="logo"
+          src="./img/Logo.png"
+        />
+      </header>
+
+      <textarea
+        name="text"
+        id="texto"
+        class="texto"
+        cols="35"
+        rows="10"
+        placeholder="Ingrese el texto aquí"
+      ></textarea>
+      <p class="avisoMayusculas">Solo letras minúsculas y sin acento</p>
+
+      <div class="botones">
+        <input type="submit" value="Encriptar" class="estilosBotones" id="encriptar"/>
+        <input type="submit" value="Desencriptar" class="estilosBotones" id="desencriptar"/>
+      </div>  
+    </section> 
+
+    <section class="mensajes" id="mensajes">
+      <div class="vacio" id="vacio">
+        <img
+          src="./img/figura.png"
+          alt="Imágen de mensaje no encontrado"
+          id="imagenSinMensaje" class="imagenNO"
+        />
+        <h2 id="sinMensaje" class="sinMensaje">Ningún mensaje fue encontrado</h2>
+        <p id="descripcionSinMensaje" class="descripcionSinMensaje">
+          Ingresa el texto que desea encriptar o desencriptar
+        </p>
+      </div>
+
+      <div class="resultadoContainer">
+        <!-- Área de resultado para mostrar el mensaje encriptado o desencriptado -->
+        <textarea
+          name="text"
+          id="resultado"
+          class="texto"
+          cols="50"
+          rows="12"
+        ></textarea>
+
+        <input type="submit" value="Copiar" class="copiar" id="copiar" />
+      </div>
+    </section>  
+  </main>
+
+  <footer class="footer">
+    <p>Alura Challenge: Encriptador de texto</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
